@@ -1,5 +1,6 @@
-// A terminal shell implementation in Rust 
+mod builtin;
 use std::io;
+use builtin::*;
 
 fn main() {
 
@@ -16,6 +17,7 @@ fn main() {
 
 	match cmd_vec[0] {
 		"echo" => println!("{:?}",cmd_vec[1]),
+		"gcd" => {//Todo},
 		"quit" => break,
 		_ => println!("Error: Command not found"),
 
