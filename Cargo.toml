@@ -2,3 +2,7 @@
 name = "rsh"
 version = "0.1.0"
 authors = ["Rahul Sharma <rsconceptx@gmail.com>"]
+
+[dependencies]
+rustyline="*"
+nix = "0.7.0"
